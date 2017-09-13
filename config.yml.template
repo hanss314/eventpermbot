@@ -1,0 +1,18 @@
+token:
+  token goes here
+    
+prefix:
+  '!'
+
+cogs:
+  - cogs.roles
+  - cogs.channels
+  
+event_team: 
+  - event team id goes here
+  - any role ids here get bot perms
+  
+channel_cat: category new channels get added to
+
+
+
