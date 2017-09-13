@@ -109,7 +109,7 @@ class CodeNamesBot(commands.Bot):
             return bool(set([r.id for r in ctx.author.roles]) & set(ctx.bot.config['event_team']))
         
         self.add_check(has_perms)
-        #self.remove_command("help")
+        self.remove_command("help")
         token = self.config['token']
         cogs = self.config.get('cogs', [])
         for cog in cogs:
