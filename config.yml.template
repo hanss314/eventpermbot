@@ -6,7 +6,7 @@ prefix:
 
 cogs:
   - cogs.roles
-  - cogs.channels
+  #- cogs.channels
   - cogs.misc
   
 event_team: 
