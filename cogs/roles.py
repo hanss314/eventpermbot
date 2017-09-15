@@ -46,6 +46,16 @@ class Roles():
         if success: await ctx.send('Removed {} from {}.'.format(role, ', '.join(success)))
         else: await ctx.send('Removing roles failed.')
         
+    @commands.command(aliases=['mention', 'ping'])
+    async def announce(self, ctx, role: commands.RoleConverter, *, message = ''):
+        '''Ping a role'''
+        if role.id not in ctx.bot.ids['roles']: return await ctx.send('You can\'t do that.')
+        await role.edit(mentionable=True)
+        await ctx.send('{} {}'.format(role.mention, message))
+        await role.edit(mentionable=False)
+        try: await ctx.message.delete()
+        except: pass
+        
     @commands.command(aliases=['listroles'])
     async def list_roles(self, ctx):
         '''Remove role from members'''
