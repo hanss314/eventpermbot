@@ -58,7 +58,7 @@ class Roles():
         
     @commands.command(aliases=['listroles'])
     async def list_roles(self, ctx):
-        '''Remove role from members'''
+        '''List roles the event team can use'''
         e = discord.Embed()
         e.title = 'Event team roles'
         m = ''

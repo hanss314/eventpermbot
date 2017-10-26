@@ -2,7 +2,7 @@ token:
   token goes here
     
 prefix:
-  '!'
+  'e.'
 
 cogs:
   - cogs.roles

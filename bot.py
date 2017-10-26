@@ -1,13 +1,10 @@
 import traceback
-import datetime
 import logging
 import sys
 import re
-import os
-import base64
+
 
 from discord.ext import commands
-from discord.ext.commands.errors import CommandError, CommandNotFound
 import ruamel.yaml as yaml
 import discord
 
